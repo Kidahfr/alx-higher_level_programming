@@ -33,7 +33,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_zero_number(self):
          self.assertEqual(max_integer([0, 0]), 0)
 
--   def test_big_list(self):
+    def test_big_list(self):
         self.assertEqual(max_integer([
             901, 902, 903, 904, 905, 906, 907, 908, 909, 910,
             911, 912, 913, 914, 915, 916, 917, 918, 919, 920,
@@ -62,5 +62,3 @@ class TestMaxInteger(unittest.TestCase):
     def test_number(self):
         with self.assertRaises(TypeError):
             max_integer(1)
-
-
