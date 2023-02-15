@@ -2,7 +2,7 @@
 -- during July and August
 -- ordered by temperature desc
 
-SELECT city, AVG(value) as avq_tem[
+SELECT city, AVG(value) as avq_temp
 FROM tempertaures
 WHERE month = 7 OR month = 8
 GROUP BY city
